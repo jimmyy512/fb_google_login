@@ -31,7 +31,7 @@
             appId      : '225188532145681',
             cookie     : true,                     // Enable cookies to allow the server to access the session.
             xfbml      : true,                     // Parse social plugins on this webpage.
-            version    : '6.0'           // Use this Graph API version for this call.
+            version    : 'v6.0'           // Use this Graph API version for this call.
             });
 
 
@@ -45,7 +45,7 @@
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
             js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            js.src = "./fbsdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
 
